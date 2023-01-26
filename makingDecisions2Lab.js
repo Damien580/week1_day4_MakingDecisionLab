@@ -80,12 +80,12 @@ if (score >= 90){
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
-var myFavoriteNumbers = [4,8,12,16,20,24,28,30];
+var myFavoriteNumbers = [4,8,12,16,20,24];
 // Do not edit the code above.
 
 /*
   Create a variable named 'someNum' and set it equal to the fifth value of the 'myFavoriteNumbers' array.
-*/
+  */
 
 //Code Here
 let someNum = myFavoriteNumbers[4]
@@ -98,10 +98,9 @@ console.log(someNum)
 
 //Code Here
 if (myFavoriteNumbers.length >= 7){
-  myFavoriteNumbers.push(someNum)
-  console.log(myFavoriteNumbers)
-} else if (myFavoriteNumbers.length < 7){
-  console.log('There are not enough elements in this array')
+  someNum = myFavoriteNumbers[6]
+} else {
+  console.log("There are not enough elements in this array")
 }
 
 ////////// PROBLEM 8 //////////
@@ -114,11 +113,12 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 //Code Here
 for ( i = 1; i < listOfNumbers.length; i++){
+  let currentValue = listOfNumbers[i]
   if (i % 3 === 0){
-    console.log(`${i} is divisible by 3.`)
+    console.log(`${currentValue} is divisible b y three.`)
   }
 }
-console.log(`${i} is divisible by 3.`)
+
 
 ////////// PROBLEM 9 //////////
 // Do not edit the code below.
@@ -157,12 +157,13 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 //Code Here
 switch(letterGrade) {
   case "A":
-    text = "The student is doing excellently";
+    console.log("The student is doing excellently");
     break;
   case "B":
-    text = "The student is doing well";
+    console.log("The student is doing well");
     break;
-}
+}//ran out of time to type
+
 
 
 ////////// PROBLEM 11 //////////
@@ -190,3 +191,14 @@ switch(letterGrade) {
 */
 
 //Code Here
+for (i = 0; i <= 100; i++){
+  if (i % 15 === 0) {
+    console.log("DevMountain")
+  } else if (i % 3 === 0){
+    console.log("Dev")
+  } else if (i % 5 === 0){
+    console.log("Mountain")
+  } else {
+    console.log(i)
+  }
+}
